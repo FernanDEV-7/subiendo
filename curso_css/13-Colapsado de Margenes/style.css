@@ -1,0 +1,49 @@
+/*
+Los Margenes verticales COLAPSAN, la solucion es aplicar margenes siempre hacia abajo, tambien los margenes de hijos colapsan con el margen del padre, por lo que se debera usar 3 trucos para controlar esto que son:
+    overflow: hidden
+    padding-top: 0.1px
+    border-top: 0.1px 
+
+    esto sirve para que el margen hijo no colapse con el margen del padre hacia arriba (que el margen del padre si esta arriba del todo deberia ser 0, o si no, si el margen esta entremedio, para que no se anule con el margin-bottom, que hacemos para separar contenidos hacia abajo como es recomendado) 
+*/
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #333;
+    margin: 0;
+
+}
+
+.header{
+    background-color: lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    /* overflow: hidden; */
+    /* padding-top: 0.1px; */
+    /* border-top: 0.1px solid lightcoral; */
+    /* esto sirve para evitar el colapso de margenes de hijo a padre por arriba */
+    
+}
+
+.box1,
+.box2{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.box2{
+    margin-top: 20px;
+}
+
+.title{
+    margin-top: 0;
+    margin-top: 50px;
+}

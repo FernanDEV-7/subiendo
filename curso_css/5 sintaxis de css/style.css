@@ -1,0 +1,11 @@
+/**
+*selector -> Elemento al que le vamos a aplicar un estilo
+*Propiedad -> lo que vamos a cambiar
+*Valor: El nuevo valor que le vamos a dar a la propiedad
+*Propiedad: Valor-> Se le denomina declaracion
+*Al conjunto de selector + declaracion(es) se le denomina regla */
+selector {
+    propiedad:valor;
+    propiedad2:valor;
+    propiedad3:valor;
+   }

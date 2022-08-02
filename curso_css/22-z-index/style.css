@@ -1,0 +1,55 @@
+/* z index -> Nos permite mover el elemento en el contexto de apilamiento (eje z) */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: #555;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #333;
+}
+
+.box1{
+    background-color: lightcoral;
+    position: relative;
+    left: 150px;
+    z-index: -1;
+    /* si quieres colocar al padre detras del hijo no se puede, pero si se puede poner al hijo detras del padre, para esto colocaremos un z-index negativo y que el padre no tenga ningun z-index delcarado */
+}
+
+.box1-2{
+    background-color: aquamarine;
+    position: relative;
+    left: 150px;
+    top: -25px;
+    z-index: -2;
+}
+
+.box2{
+    background-color: lightgreen;
+    position: relative;
+    top: 50px;
+    z-index: 16;
+}
+
+.box3{
+    background-color: lightseagreen;
+    position: relative;
+    z-index: 15;
+}
+

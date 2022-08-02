@@ -1,0 +1,10 @@
+/* Hijo directo -> el elemento que sea hijo directo sera seleccionado 
+
+*/
+
+.container >p{
+    background-color: aquamarine;
+}
+.container2 >p{
+    background-color:teal;
+}

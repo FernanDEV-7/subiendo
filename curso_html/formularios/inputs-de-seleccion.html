@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+    -radio -> permite seleccionar una -unica- opcion de una lista de opciones -relacionadas-
+
+    -checkbox -> permite seleccionar -varios- opciones de una lista de opciones -relacionadas-
+
+    -select -> crea una lista de opciones donde podemos seleccionar una o varias opciones, es como una barra desplegable donde saldran todas las opciones
+
+        -cada opcion ira dentro de una etiqueta <option> </option>
+
+        -si tenemos muchas opciones podemos ordenarlas por categorias a travez de la etiqueta <optgroup> con el atributo label para nombrar la categoria, asi saldran los nombres de la categoria en la barra desplegable
+ -->
+<body>
+    <h1>elementos seleccionables</h1>
+    <form action=""> <!--se coloca un nombre para que sean de una mismo conjunto, y un valor para enviar el formulario-->
+        <!-- Ejemplo de input type="radio" -->
+
+        <!-- <label for="">masculino
+            <input type="radio" name="gender" value="masculino" checked>
+        </label>
+        <label for="2">femenino
+            <input type="radio" name="gender" value="femenino" id="2">
+        </label>
+        <label for="">desconocido
+            <input type="radio" name="gender" value="desconocido">
+        </label> -->
+
+
+         <!-- Ejemplo de input type="checkbox"-->
+
+        <!-- <label>
+            HTML  
+            <input type="checkbox" name="lenguaje" value="html">     
+        </label>
+        <label>
+            CSS
+            <input type="checkbox" name="lenguaje" value="css">     
+        </label>
+        <label>
+            JAVASCRIPT 
+            <input type="checkbox" name="lenguaje" value="javascript">     
+        </label>
+        <button>enviar</button> -->
+
+
+        <!-- Ejemplo de input type="select" -->
+
+        <!-- <h2>lenguajes que concoces</h2>
+        <select name="lenguajes" multiple> 
+
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">javascript</option>
+        </select> -->
+        
+            <!--cuando se coloca el atributo name, todas las opciones pertenecen a ese nombre
+            si se coloca el atributo booleano "multiple", se podran escoger multiples opciones-->
+
+        <!-- <select name="Mascotas">
+            <optgroup label="4 Patas">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+            
+            </optgroup>
+            <optgroup label="Aves">
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="Otras">
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarantula</option>
+            </optgroup>
+        
+        </select>-->
+    </form>
+        <!-- Ejemplo de datalist -->
+    <form>
+        <label for="mascotas">Mascotas</label>
+        <input type="list" list="pets" id="mascotas"> <!--un input tipo list contiene un filtro con los caracteres que tienen las opciones, no puedes poner el mismo nombre al id que al atributo list, si no se confundira -->
+        <datalist id="pets"> <!--se le debe asignar el mismo id que se le pone en el atributo list dentro de input-->
+            <option value="perro">el mejor amigo del hombre</option>
+            <option value="gato">Gato</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+            <option value="serpiente">Serpiente</option>
+            <option value="tarantula">Tarantula</option>
+        </datalist>
+        <button>Enviar</button>
+        <!-- el atributo value contendra el valor, lo que va dentro de las etiquetas puede ser una descripcion -->
+    </form>
+      
+
+    
+</body>
+</html>

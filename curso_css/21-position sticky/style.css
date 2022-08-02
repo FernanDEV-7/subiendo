@@ -1,0 +1,44 @@
+/* 
+sticky -> Es una mezcla de position relative y fixed. 
+        con este tipo de posicionamiento los valores top. left, bottom y right  no sirven para mover el elemento, si no para indicarle en que punto pasara a tener un comportamiento de posicionamiento fixed, hasta llegar a ese punto se comportara como si estuviera relative. 
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.header{
+    text-align: center;
+    background-color: lightskyblue;
+    color: orangered;
+    /* position: sticky;
+    top: 0; */
+}
+
+article{
+    outline: 3px red solid
+}
+
+.article-tittle{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    margin: 0;
+    /* el elemento se queda pegado en la posicion que le hemos declarado siempre en cuando el alto de su contenedor siga teniendo contenido, si se declara la propiedad overflow:hidden, no funciona el position sticky */
+}
+
+/* .menu{
+    position: sticky;
+    top: 0;
+} */

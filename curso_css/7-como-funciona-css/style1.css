@@ -1,0 +1,35 @@
+/* Herencia:
+    es la capacidad que tienen algunos elementos de heredar algunas propiedades de sus elementos contenedores 
+    (padres, abuelos, etc)
+    */
+
+body{
+    background-color: #333;
+}
+
+.title {
+    color: cyan ;
+    font-size: 10px;
+}
+
+#title{
+    color: red;
+}
+.text{
+    color: rgb(255, 255, 255);
+}
+
+.link{
+    color:inherit
+    /* las etiquetas <a> no heredan los estilos de sus padres, inherit hace que una propiedad que, por defecto no se hereda, fuerce 
+    su herencia*/
+}
+
+.list{
+    color: rgb(8, 227, 15);
+}
+
+.list-item-extra{
+    color:initial;
+    /* con el atributo initial, hacemos que no herede el estilo de su padre, y que tenga su color inicial*/
+}

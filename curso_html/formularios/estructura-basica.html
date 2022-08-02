@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<!-- 
+    La estructura basica de un formulario se compone de 4 elementos:
+
+    -form -> es la etiqueta que engloba nuestro formulario 
+
+    -label -> sirve para escribir el nombre del campo a rellenar, debe tener el atributo for al cual se le indica un id que lo que hara sera emparejar el label con su input correspondiente 
+
+    -input -> sirve para crear un campo que permitira al usuario interactuar
+
+    -button -> crea un boton que permite enviar el formulario
+ -->
+<body>
+    <form action="enviar.html">
+        <label for="name">Nombre</label><!--en for pondremos el nombre del id que ira en input-->
+        <input id="name"type="text">
+        <button>Enviar formulario</button>
+    </form>
+</body>
+</html>

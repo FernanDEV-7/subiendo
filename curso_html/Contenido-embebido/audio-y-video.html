@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y video</title>
+</head>
+<!--
+    etiqueta <audio>: 
+    con la etiqueta <audio> se le coloca un src y la direccion 
+    los atributos de audio son:
+        -controls -> aparecen los controles del audio (reproducir pausa y mute)
+        -autoplay -> reproduccion automatica
+        -muted -> silencio (chrome usara esta opcion en una web live)
+    
+    etiqueta <video>:
+    la etiqueta video tiene las mismas propiedades que audio, tiene que colocarse controls para los controles, pero aqui van unos cuantos atributos booleanos mas:
+        -loop -> reproduccion en bucle
+        poster ->la imagen que tiene el video antes de reproducirse (esto no se vera si esta en autoplay)
+    
+ -->
+<body>
+    <audio src="/Contenido-embebido/assets/audio/electriccurrent.mp3" controls autoplay muted></audio>
+
+    <video src="/Contenido-embebido/assets/video/Jellyfish - 110877.mp4" controls loop poster="/Contenido-embebido/assets/images/Sakata_gintoki_ova.webp"></video>
+    
+</body>
+</html>

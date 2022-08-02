@@ -1,0 +1,22 @@
+/* fixed -> el elemento perdera sus medidas y su espacio reservado. si lo movemos usara el elemento html de referencia y ademas se quedara FIJO en esa posicion aunque hagamos scroll. */
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+ margin: 0;
+ background-color: #333;
+ color: #fff;
+}
+
+.header{
+    text-align: center;
+    padding: 25px 0;
+    background-color: lightskyblue;
+    color: orange;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

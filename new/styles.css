@@ -1,0 +1,19 @@
+/* NO SE DEBE SELECCIONAR CON ETIQUETAS, ESTO ES PARA AGILIZAR EL VÍDEO */
+
+body{
+    background-color: rgb(180, 61, 61);
+}
+
+table {
+    margin-top: 2em;
+    border-collapse: collapse;
+}
+
+th, td, tr {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.form2{
+    background-color: aqua;
+}

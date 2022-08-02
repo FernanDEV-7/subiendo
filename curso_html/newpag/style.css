@@ -1,0 +1,28 @@
+body {background-color: rgb(57, 79, 97);}
+a {color: white;}
+h1 {background-color: rgb(18, 125, 125);}
+h2 {background-color: rgb(3, 65, 123);}
+li {color: rgb(211, 206, 206);}
+p {color: white;}
+.momo dl,dd {color: rgb(212, 233, 247);} dt {color: aqua;}
+h1 {color: rgb(235, 244, 68);}
+h2 {color: beige;background-color: rgb(3, 65, 123);}
+header {background-color:rgb(66, 96, 121);}
+td, tr, caption {color: rgb(223, 218, 218);}
+col:nth-child(1) {background-color:steelblue;}
+col:nth-child(2) {background-color: rgb(47, 103, 84);}
+blockquote {color: aqua; background-color: rgb(0, 0, 0);}
+q {color: aquamarine; background-color: rgb(0, 0, 0);}
+label {color: whitesmoke;}
+input {color: black;}
+h3 {color: rgb(255, 255, 255);}
+legend {color: wheat;}
+span {color: cornsilk;}
+fieldset {width:100%;}
+figcaption {color: white;}
+thead,th,tr,td,col,colgroup,table {width:300px;}
+form {width: 100%;}
+iframe {width:auto}
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input</title>
+</head>
+<!-- 
+    input type:
+        button -> Visualmente es igual, pero el formulario no se enviará
+        submit -> Se utiliza para enviar el formulario
+
+        date: -> Se utiliza para introducir una fecha
+        datetime -> Obsoleto
+        datetime-local -> fecha y hora, no funciona en firefox (puedes poner un input date y otro time, es igual)
+        time -> Se utiliza para introducir una hora
+            TIP
+                *Se recomienda usar datetime y time para seleccionar fecha y hora
+                hidden -> Campo oculto, puede contener valor pero no se mostrará
+        month -> Se utiliza para introducir un mes
+        week -> Se utiliza pra introducir el número de semana del año
+
+        search -> Se utiliza para las barras de búsqueda
+        tel -> Se utiliza para introducir números telefónicos
+        email -> Se utiliza para introducir un email
+        password -> Se utiliza para contraseñas
+        url -> Se utiliza para introducir URLs
+
+        color: -> Se utiliza para especificar un color
+        number -> Se utiliza para valores numéricos
+        range -> Se utiliza para establecer un rango
+        reset -> Se utiliza para resetear el formulario
+        text -> Valor por defecto
+ -->
+
+<body>
+    <!-- <form>
+        <input type="date">
+        <input type="datetime-local">
+    </form> -->
+
+    
+      <div>
+        <label>search
+          <input type="search">
+        </label>
+      </div>
+
+      <div>
+        <label>telefono 
+          <input type="tel">
+        </label>
+      </div>
+
+      <div>
+        <label>email
+          <input type="email">
+        </label>
+      </div>
+
+      <div>
+        <label>password
+          <input type="password">
+        </label>
+      </div>
+
+      <div>
+        <label>URL
+          <input type="url">
+        </label>
+      </div>
+      <form action=""> 
+        <input type="color"><!--se añade una barra de colores, se puede usar para personalizar los colores de la pag-->
+
+        <input type="number"><!--se usa para poner valores numericos-->
+
+        <input type="range" step="5" min="0" max="20"><!--sirve para crear una barra como de sonido, se le pueden añadir atributos
+        como step para avanzar en cierta cantidad y establecerle un minimo y maximo-->
+
+        <input type="reset"> <!--sirve para resetear los datos del formulario y dejarlos como al principio-->
+
+        <input type="text"><!--input por defecto-->
+      </form>
+
+     
+    
+
+</body>
+
+</html>

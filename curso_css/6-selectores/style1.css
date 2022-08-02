@@ -1,0 +1,38 @@
+/* Selectores Compuestos:                                         
+        -selectores agrupados:
+            Se agrupan los selectores separados por comas y se escribe el estilo un sola vez
+        -selectores combibandores:
+            Selector descendiente -> si el elemento esta dentro de otro es hijo, selecciona a su hijo
+            Selector de hermano siguiente "+" -> si esta al mismo nivel es hermano, selecciona  solo al hermano adyacente inmediato
+            Selector de hermanos siguientes "~" (ALT GR +) selecciona a todos los hermanos siguientes 
+            Selector de hijo directo ->  
+
+        -pseudoclases
+        -pseudoelementos
+*/
+/* .text,
+.text-2,
+.text-3, 
+.text-4{
+    background-color:steelblue
+} */
+
+.container > p{
+    background-color: tomato;
+}
+
+div .title-2{
+    background-color: teal;
+    /*se selecciona la clase especifica dentro del elemento div*/ 
+}
+
+.text-2 + .title-2{
+    background-color: tomato;
+    /* solo se selecciona el hermano que este inmediatamente despues*/ 
+}
+
+.text-2 ~ P{
+    background-color: teal;
+    /*todos los hermanos siguientes, por cascada se pinta verde ignorando el color que se asigno a los descendientes directos (tomato) */
+}
+

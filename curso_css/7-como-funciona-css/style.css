@@ -1,0 +1,35 @@
+/* ¿Como Funciona CSS?
+    especificidad -> Establece como de especifico es un selector para saber que estilo aplicar.
+    El calculo se realiza con la siguiente formula:
+        Etiquetas y pseudoelementos 001
+        Clases , atributos y pseudoclases 010
+        ID's 100
+        Estilos en linea 1000
+        IMPORTANT gana a todo y no se usa NUNCA
+        La cascada funcionara siempre en cuando la especificidad sobre el elemento sea la misma
+
+    Cascada  : el ultimo elemento es el que sera tomado en cuenta siempre en cuando tengan la misma especificidad 
+    Herencia : un padre hereda estilo sobre sus hijos pero nunca a sus hermanos.
+*/
+
+h1{
+    background-color: red;
+}
+.title{
+    background-color: aqua;
+}
+#title {
+    background-color: azure;
+}
+.title{
+    background-color: beige;
+}
+h1 .title {
+    background-color: blueviolet;
+}
+h1#title{
+    background-color: teal;
+}
+h1.title#title{
+    background-color: tomato;
+}

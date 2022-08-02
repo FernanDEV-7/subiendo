@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      col:nth-child(2){background-color:steelblue;}
+      col:nth-child(1){background-color:rgb(159, 118, 118);}
+      body {background-color: rgb(49, 48, 48);}
+      h1 {color: aqua;}
+      caption {color: aquamarine;}
+    </style>
+</head>
+
+<body>
+    <!-- 
+        las tablas en html sirven para mostrar contenido tabulado
+
+        La estructura basica de una tabla se compone de:
+            table -> etiqueta  que encierra una tabla
+            tr -> table row, etiqueta que construye una fila 
+            td -> table data, etiqueta que construye una celda
+
+        truco: el numero de celdas dentro de un tr establecera el numero de columnas de la tabla.
+
+        -Los titulos de las tablas se establecen con la etiqueta caption, es una etiqueta opcional, y segun la especificacion esa 
+        etiqueta se coloca justo despues de la etiqueta table.
+
+        -Las cabeceras de las tablas se establecen con la etiqueta thead.
+        dentro dentremos una etiqueta tr normal, pero en el caso de las celdas, las estableceremos con la etiqueta th en lugar de td
+
+        -El contenido de la tabla debe ir dentro de una etiqueta tbody para representar el cuerpo de la tabla
+
+        -<tfoot> se puede poner de forma opcional para agregarle un pie de tabla, esto se usa en tablas que suman las cantidades de elementos 
+
+        -Para hacer que las celdas ocupen mas de una fila o mas de una columna tenemos 2 atributos: 
+            rowspan -> sirve para que una celda ocupe mas de una fila, el valor por defecto es 1
+            colspan -> sirve para que una celda ocupe mas de una columna, el valor por defecto es 1
+
+
+        -Cuando necesitamos seleccionar una columna , tenemos la etiqueta colgroup, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas  etiquetas col como columnas tengamos, cada etiqueta col equivaldra a una columna siguiendo el mismo orden que tiene una tabla
+        
+        -Si necesitamos que una etiqueta col agrupe mas de una columna , tenemos el atributo span, que funciona exactamente igual que rowspan y colspan
+
+        
+     -->
+    <h1>Tabla</h1>
+  
+    <table>
+      <caption>HORARIO DE CLASES</caption> <!--Titulo de la tabla-->
+      <colgroup>
+        <col span="5"> <!-- de esta manera seleccionamos columnas-->
+        <col>  <!--denota una columna, cada etiqueta col denota una columna dentro de una tabla-->
+      </colgroup>
+      <thead> <!--cabecera de la tabla-->
+        <tr>    <!--FILA-->
+          <th></th>
+          <th>L</th> <!--TH celdas que forman las columnas-->
+          <th>M</th> <!-- cada elemento th o td se ira hacia la derecha como una celda-->
+          <th>X</th>
+          <th>J</th>
+          <th>V</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:30 - 9:30</td>
+          <td>Matematicas</td>
+          <td>Matematicas</td>
+          <td>sociales</td>
+          <td>Matematicas</td>
+          <td>Matematicas</td>
+        </tr>
+        <tr>
+          <td>9:30 - 10:25</td>
+          <td>Lengua</td>
+          <td>Lengua</td>
+          <td>Matematicas</td>
+          <td>Ciencias</td>
+          <td>Lengua</td>
+        </tr>
+        <tr>
+          <td>10:25 - 11:20</td>
+          <td>Educacion Fisica</td>
+          <td>Ciencias</td>
+          <td>Lengua</td>
+          <td>lengua</td>
+          <td>Educacion Fisica</td>
+        </tr>
+        <tr>
+          <td>11:20 - 11:45</td>
+          <td colspan="5">recreo</td>   <!--Ejemplo de colspan, numero de espacios de celdas hacia la derecha que abarcara -->
+        </tr>
+        <tr>
+          <td>11:45 - 12:40</td>
+          <td>Ingles</td>
+          <td>Sociales</td>
+          <td>Ingles</td>
+          <td>Tutoria</td>
+          <td>Ingles</td>
+        </tr>
+        <tr>
+          <td>12:40 - 13:35</td>
+          <td rowspan="2">Tecnologia</td>    <!--Ejemplo de rowspan, numero de celdas hacia abajo que abarcara -->
+          <td>Educacion Fisica</td>
+          <td>Plastica</td>
+          <td>Religion</td>
+          <td>Musica</td>
+        </tr>
+        <tr>
+          <td>12:40 - 13:25</td>
+          <td>Frances</td>
+          <td>Tecnologia</td>
+          <td>Frances</td>
+          <td>Tecnologia</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Total de asignaturas</td>
+          <td>12</td>
+        </tr>
+      </tfoot>
+      
+     
+    </table>
+</body>
+</html>

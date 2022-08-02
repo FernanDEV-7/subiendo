@@ -1,0 +1,80 @@
+/* selectores */
+
+/*
+    Selectores simples: 
+        -selectores elementales
+            selector universal -> * 
+            selector de tipo o etiqueta -> Nombre de la etiqueta
+        -----------------------------------------------------------
+        -selectores de atributo
+            id -> id del elemento
+            clase -> clase del elemento
+            otros atributos -> [atributo], [atributo=valor], [atributo^], [atributo*=valor],[atributo$=valor]
+        -----------------------------------------------------------
+    Selectores Compuestos:                                         
+        -selectores agrupados
+        -selectores combibandores
+        -pseudoclases
+        -pseudoelementos
+*/
+/*Ejemplos de selectores de elementales*/
+    /*ejemplo de selector universal:*/
+    /* *{
+        background-color:steelblue;
+        }
+*/
+/* Ejemplo de selector de tipo o etiqueta: */
+/*
+    h1{
+        background-color: lightcyan;
+    }
+    p {
+        background-color: lightgreen;
+    }
+    ul{
+        background-color: aqua;
+    }
+*/
+
+        
+/* Ejemplo de selector de Atributo: */
+
+#title {background-color: lightgreen;}
+
+.title {
+    background-color: salmon;
+}
+
+.texto {
+    background-color: rgb(27, 201, 102);
+}
+
+[href]{
+    background-color: mediumorchid;
+    /*si se cambian uno arriba del otro, no funciona, por que por cascada los de abajo mandan*/
+}
+[href="https://www.google.com/?hl=es"]{
+    background-color: rgb(255, 0, 200);
+    /*se pone entre corchetes el atributo especifico con su contenido especifico*/
+}
+
+[href^="color"]{
+    background-color: red;
+    /* " " atributo especifico con acento circunflejo = comprueba si el contenido del atributo empieza con ese nombre, si es asi se aplica el estilo*/ 
+}
+
+[href*="modo"]{
+    background-color: rgb(0, 255, 47);
+    /* " " si tiene el valor que le decimos, se aplica el estilo, independientemente de donde se encuentre*/
+}
+[href$="maldito"]{
+    background-color:coral
+    /* " " si el contendio del atributo termina con esa palabra, se aplica el estilo*/
+}
+
+
+[lang|="en"]{
+    background-color:magenta
+}
+/* el pipe o la barra vertical sirven para que se apliquen los cambios si tiene la palabra o la palabra y un guion "ejm: lenguaje"*/
+

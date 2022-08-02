@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Embebido</title>
+    <style>
+        video, img {max-width: 100%;}
+    </style>
+</head>
+<body>
+    <!--
+        srcset = conjunto de sources, se usa para poner una foto de respaldo
+        width = Ancho
+        length = largo
+
+         -->
+    <h1>Contenido Embebido</h1>
+
+    <!-- 
+        para hacer una pagina web responsive con una imagen para pc y otra para movil se tiene que tener 2 imagenes con diferentes tamaños, para heco usaremos el atributo srcset, colocaremos las 2 imagenes y luego a la de menor medida le pondremos un atributo booleano 2x o 3x depende del device pixel ratio de los dispositivos moviles (2x esta bien)
+     -->
+        <!-- <img srcset="
+        /Contenido-embebido/assets/images/12.webp,
+        /Contenido-embebido/assets/images/12x.webp 2x" alt="hisoka"> -->
+
+        <!-- 
+            Picture:
+            picture es una etiqueta mejor que poner solo img, pasos a seguir para usar bien picture:
+                1.- coloca una etiqueta source dentro de picture (source no se cierra)
+                2.- coloca el atributo srcset (atributo obligatorio) con las 2 imagenes (pc y movil)
+                3.- coloca el atribuo "-media-"" entre parentesis y dos puntos (max width)(ancho) de una pantalla de pc normal (1200px)
+                4.- la etiqueta picture no funciona si no se pone una imagen de respaldo asi que colocas
+                    una etiqueta <img> con la direccion donde esta la imagen de respaldo, asi coloques una segunda imagen no funciona si no tienes una img aparte.   
+                    
+                <picture> <source srcset="" media="(max-min-width:--px"> <img src alt> 
+        -->
+        <picture>
+            <!-- <source srcset=" /Contenido-embebido/assets/images/12.webp,
+            /Contenido-embebido/assets/images/descarga.jpg"> -->
+            <source srcset="/Contenido-embebido/assets/images/12x.webp"  media="(max-width:1200px)"><!--muestra esta imagen hasta que maximo 1200 px, pasado los 1200 muestra la siguiente, la de respaldo (12X = PEQUEÑA, 12 = GRANDE)-->
+            <img src="/Contenido-embebido/assets/images/12.webp" alt="Hisoka loco">
+            <!-- se puede invertir, se coloca la grande arriba y se le dice que se enseñe con un minimo de 1200px, de lo contrario que muestre la pequeña -->
+            <source srcset="/Contenido-embebido/assets/images/12.webp"  media="(min-width:1200px)">
+            <img src="/Contenido-embebido/assets/images/12x.webp" alt="Hisoka loco">
+        </picture>
+        <!-- 
+            <iframe> -> traer contenido de otras plataformas, solo debes copiar el link que te proporcionan, evitar sobrecargar la pagina de iframes ya que se vuelve muy pesada de cargar
+         -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vz4z0RLcAyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <!-- figure:  -->
+
+        <h2>Gatos</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione nihil fuga exercitationem deleniti, esse ex provident eligendi perspiciatis dolorem. Vero corrupti tempore corporis cum id deserunt natus repellendus mollitia!</p>
+        <figure><!--figure se usa para interrumpir un parrafo con una imagen-->
+            <figcaption>Gato comun</figcaption> <!--descripcion de la figura-->
+            <img src="https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg" alt="gato tumbado">
+        </figure>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente expedita non aperiam aspernatur maxime libero recusandae? Saepe repellendus modi vel eos assumenda, doloribus quasi rerum vero! Amet, iure ex?</p>
+</html>

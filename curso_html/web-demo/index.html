@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Rutas absolutas y rutinas relativas
+    Absolutas:
+    las absolutas tienen un protocolo :http o https, se suelen usar en rutas externas
+    
+    Relativas:
+    -pueden ser relativas desde el punto donde nos encontramos o relativas a la raiz
+    -no usan protocolo
+    - si el recurso se encuentra en el mismo nivel, pondremos unicamente el nombre del archivo
+    -si necesitamos salir de la carpeta actual, usaremos ../ y se pone uno por cada nivel de carpeta de la que querramos salir
+
+    atributos de enlaces:
+    target: define donde se abrira el recurso solicitado, por norma general  siempre que useis rutas absolutas pondreis como valor "_blank" o "_self" (self es el valor que tiene por defecto) 
+    
+    download: 
+-->
+    <h1>HOME</h1>
+    <!-- <a href="/paginas/contacto.html">ir a contacto</a>  --> 
+    <nav> <!--barra de navegacion-->
+        <p><a href="/paginas/blog.html#post-1">post 1</a></p> <!--es importante colocar el #antes del id-->
+        <p><a href="/paginas/blog.html#post-2">post 2</a></p>
+        <p><a href="/paginas/blog.html#post-3">post 3</a></p>
+        <p><a href="/paginas/blog.html#post-4">post 4</a></p>
+        <p><a href="/paginas/blog.html#post-5">post 5</a></p>
+    </nav>
+    
+    <a href="https://www.google.com/?hl=es" download>ir a contacto</a> 
+    <a href="/assets/Sakata_gintoki_ova.webp"download>Descargar imagen anime</a>
+    <br>
+    <!-- <a href="https://www.google.com/?hl=es" target="_blank">ir a google</a> -->
+</body>
+</html>
